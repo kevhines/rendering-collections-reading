@@ -1,3 +1,8 @@
 <% @posts.each do |post| %>
   <%= render :partial => "post", locals: {:post => post} %>
 <% end %>
+<br />Next<br />
+<%= render :partial => "post", :collection => @posts %> 
+<br />Next<br />
+<%= render @posts %> 
+
